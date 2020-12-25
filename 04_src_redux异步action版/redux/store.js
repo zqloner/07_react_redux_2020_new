@@ -9,5 +9,6 @@ import countReducer from './count_reducer'
 //引入redux-thunk，用于支持异步action
 import thunk from "redux-thunk";
 
-//暴露store
+//暴露store。
+//applyMiddleware(thunk)是为了让store能够接受函数action,并加以处理返回一般对象交给reducer进行处理
 export default  createStore(countReducer,applyMiddleware(thunk))
