@@ -1,7 +1,6 @@
 import React,{Component} from "react";
 //引入store,用于获取redux中保存的状态
 import store from '../../redux/store'
-
 export default class Count extends Component {
   increment = ()=>{
     const {value} = this.selectNumber
