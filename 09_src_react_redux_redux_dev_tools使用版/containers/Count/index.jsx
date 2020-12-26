@@ -1,8 +1,6 @@
 import React,{Component} from "react";
 import {connect} from 'react-redux'
 import {createIncrementAction,createDecrementAction,createIncrementAsyncAction} from "../../redux/actions/count";
-import countReducer from "../../redux/reducers/count";
-import personReducer from "../../redux/reducers/person";
 
 class Count extends Component {
   increment = ()=>{

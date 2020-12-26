@@ -2,8 +2,6 @@ import React,{Component} from "react";
 import {connect} from 'react-redux'
 import {nanoid} from "nanoid";
 import {addPersonAction} from "../../redux/actions/person";
-import personReducer from "../../redux/reducers/person";
-import countReducer from "../../redux/reducers/count";
 
 class Person extends Component {
   addPerson=(person)=>{
